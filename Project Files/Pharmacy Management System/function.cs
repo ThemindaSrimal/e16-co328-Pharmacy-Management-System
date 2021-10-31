@@ -16,7 +16,7 @@ namespace Pharmacy_Management_System
         {
             //"data source = S3DW\\SQLEXPRESS;database=PharmacyManagementSystem;integrated security = True";
             // load connection string from app.config
-            string connString = ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString;
+            string connString = ConfigurationManager.ConnectionStrings["Pharmacy_Management_System.Properties.Settings.PharmacyManagementSystemConnectionString"].ConnectionString;
             
             SqlConnection con = new SqlConnection(connString);
 
