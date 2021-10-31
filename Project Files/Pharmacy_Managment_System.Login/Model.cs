@@ -15,7 +15,7 @@ namespace Pharmacy_Managment_System.Core
         {
 
             // load connection string from app.config
-            string connString = ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString;
+            string connString = ConfigurationManager.ConnectionStrings["Pharmacy_Management_System.Properties.Settings.PharmacyManagementSystemConnectionString"].ConnectionString;
 
             SqlConnection con = new SqlConnection(connString);
 
